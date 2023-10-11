@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box,
+}
+body{
+    font-family: 'Roboto';
+    
+   background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #72ef38, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 0;
+padding: 0;
+display: flex;
+flex-flow: row wrap;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 700px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tabla-container{
+    background-color: beige;
+    width: 800px;
+    height: 200px;
+    margin: 15px;
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#tabla-pacientes{
+    width: auto;
+
+    border: solid 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+th, td{
+    width: 120px;
+    height: 20px;
+    padding: 10px;
+    background-color: #38ef7d;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    padding: 0;
+}
+.listado-container{
+    margin: 15;
+    padding: 0;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.listado{
+    width: 600px;
+    height: 300px;
+    background-color: aquamarine;
+    flex-direction: row;
+    border-radius: 10px;
+}
+  .li{
+    font-size: 35px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+.li1{
+    text-decoration: none;
+}
+.form{
+    width: 600px;
+    background: #ffff;
+    box-shadow: 0 0 6px 0 rgb(rgb(60, 179, 113));
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+form .grupo{
+    position: relative;
+    margin: 30px;
+}
+input{
+    background: none;
+    color: #11998e;
+    font-size: 15px;
+    padding: 8px 8px 8px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #708090;
+}
+input:focus{
+    outline: none;
+    color:rgb(60, 179, 113);
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolut;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+    input:valid~label{
+    top: -12px;
+    font-size: 10px;
+    color: #11998e;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position:absolute;
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+    width: 100%;
+
+}
+.barra1{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra1::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position:absolute;
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra1::before{
+    width: 100%;
+
+}
+input .group{
+    border: 0;
+
+}
+.a{
+    margin: 20px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: end;
+    
+    
+    
+}
+
+.footer .div{
+    margin: 5px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+.footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.h2{
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rrss{
+    margin: 5px;
+    padding: 0;
+    margin-bottom: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+
+}
